@@ -1,0 +1,40 @@
+{{ template "header" }}
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <!-- Blog Post -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">Current State of Cyberwarfare</h2>
+            <p class="blog-post-meta">November 11, 2015 by Jennifer Garner</p>
+
+            <p>No content yet.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T0e46OtrQps" frameborder="0" allowfullscreen></iframe>
+            <p><a href="https://www.youtube.com/watch?v=61v39UdxzoE" target="_blank">John Oliver on a Cyber Attack on the US by China</a></p>
+            <img style="max-width: 900px" src="http://russia-insider.com/sites/insider/files/070511-F-JM997-001.jpg" />
+            <p>Soldiers working on computers. Source: russia-insider.com</p>
+          </div>
+
+          <!--Page Navigation -->
+          <nav>
+            <ul class="pager">
+              <li><a href="/effect">&lt;&lt; Effect</a></li>
+              <li><a href="/future">Future &gt;&gt;</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        {{ template "sidebar" }}
+
+      </div>
+
+    </div>
+    
+{{ template "footer" }}
+
+<!--Use class "active" to change pointer on navbar-->
+<script>
+  document.getElementById("current").setAttribute("class", "active blog-nav-item");
+</script>

@@ -1,0 +1,40 @@
+{{ template "header" }}
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <!-- Blog Post -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">The Future of Cyberwarfare</h2>
+            <p class="blog-post-meta">November 11, 2015 by Jennifer Garner</p>
+
+            <p>No content yet.</p>
+            <img src="http://osnetdaily.com/wp-content/uploads/2014/04/cyber_warfare.jpg" />
+            <p>What will cyberwarfare of the future look like? Source: osnetdaily.com</p>
+            <img style="max-width: 600px" src="https://libraryeuroparl.files.wordpress.com/2014/10/eprs-briefing-542143-cyber-defence-in-the-eu-final.png" />
+            <p>Cyberwarfare Source: libraryeuroparl.files.wordpress.com</p>
+          </div>
+
+          <!--Page Navigation -->
+          <nav>
+            <ul class="pager">
+              <li><a href="/current">&lt;&lt; Current</a></li>
+              <li><a href="/references">References &gt;&gt;</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        {{ template "sidebar" }}
+
+      </div>
+
+    </div>
+    
+{{ template "footer" }}
+
+<!--Use class "active" to change pointer on navbar-->
+<script>
+  document.getElementById("future").setAttribute("class", "active blog-nav-item");
+</script>

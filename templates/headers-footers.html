@@ -17,6 +17,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/public/css/blog.css" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,18 +31,26 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Creation and Goals</a>
-          <a class="blog-nav-item" href="#">Effect on Cyberwarfare</a>
-          <a class="blog-nav-item" href="#">Current</a>
-          <a class="blog-nav-item" href="#">Future</a>
+          <a class="blog-nav-item" id="index" href="/">Creation and Goals</a>
+          <a class="blog-nav-item" id="effect" href="/effect">Effect on Cyberwarfare</a>
+          <a class="blog-nav-item" id="current" href="/current">Current</a>
+          <a class="blog-nav-item" id="future" href="/future">Future</a>
+          <a class="blog-nav-item" id="references" href="/references">References</a>
         </nav>
       </div>
     </div>
+    
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Stuxnet and Flame</h1>
+        <p class="lead blog-description">Jennifer Garner</p>
+      </div>
 {{ end }}
 
 {{ define "footer" }}
     <footer class="blog-footer">
-      <p>Stuxnet and Flame term paper for Honors 102: Global Challenges. Created by Jennifer Garner. <a href="http://github.com/jennifergarner/Stuxnet-and-Flame">Github</a></p>
+      <p>Stuxnet and Flame term paper for Honors 102: Global Challenges. Created by Jennifer Garner. <a href="https://github.com/jennifergarner/Stuxnet-and-Flame">Github</a></p>
       <p>
         <a href="#">Back to top</a>
       </p>
@@ -55,4 +64,23 @@
     <script src="/public/js/bootstrap.min.js"></script>
   </body>
 </html>
+{{ end }}
+
+{{ define "sidebar" }}
+  <!-- Sidebar -->
+  <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+    <div class="sidebar-module sidebar-module-inset">
+      <h4>About</h4>
+      <p>No content yet.</p>
+    </div>
+    <div class="sidebar-module">
+      <h4>Sources</h4>
+      <ol class="list-unstyled">
+        <li><a href="http://www.pbs.org/wgbh/nova/next/military/snowden-transcript/" target="_blank">Bamford et al., 2015</a></li>
+        <li><a href="http://spectrum.ieee.org/telecom/security/the-real-story-of-stuxnet" target="_blank">Kushner, 2013</a></li>
+        <li><a href="http://www.wsj.com/articles/cyberwar-ignites-a-new-arms-race-1444611128" target="_blank">Paletta et al., 2015</a></li>
+        <li><a href="http://www.nytimes.com/2012/06/01/world/middleeast/obama-ordered-wave-of-cyberattacks-against-iran.html" target="_blank">Sanger, 2012</a></li>
+      </ol>
+    </div>
+  </div>
 {{ end }}

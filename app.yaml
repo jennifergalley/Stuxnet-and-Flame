@@ -1,4 +1,4 @@
-application: not-a-project-id
+application: stuxnet-and-flame
 version: 1
 runtime: go
 api_version: go1
