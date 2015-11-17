@@ -102,6 +102,7 @@ h6, .h6 {
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
+  width: 72.67%;
 }
 
 /* Sidebar modules for boxing content */
@@ -118,6 +119,10 @@ h6, .h6 {
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
   margin-bottom: 0;
+}
+.blog-sidebar {
+  margin-left: 0;
+  font-size: larger;
 }
 
 
@@ -140,6 +145,8 @@ h6, .h6 {
 
 .blog-post {
   margin-bottom: 60px;
+  color: black;
+  font-size: larger;
 }
 .blog-post-title {
   margin-bottom: 5px;
